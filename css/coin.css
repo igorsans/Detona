@@ -1,0 +1,90 @@
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+.gizmo {
+    width: 1.4em;
+    height: 8.3em;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0 0 1em;
+}
+
+.slot {
+    height: 4.6em;
+    width: 1em;
+    background: #555;
+    border: 0.2em solid #CCC;
+    border-radius: 0.3em;
+    position: relative;
+}
+
+.slot:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #777;
+    border-radius: 0.3em 0 0.2em 0;
+    width: 0.6em;
+    height: 4em;
+}
+
+.led {
+    height: 1em;
+    width: 1em;
+    background: #3C3;
+    border: 0.2em solid #CCC;
+    border-radius: 1em;
+    margin-bottom: 0.2em;
+}
+.gizmo:hover .coin {
+    opacity: 1.0;
+    margin-left: 0;
+}
+
+.coin {
+    position: relative;
+    top: -4.3em;
+    left: -1.9em;
+    width: 2.5em;
+    height: 4em;
+    border-radius: 50%;
+    background: #e79178;
+    transition: all 0.3s ease;
+    margin-left: -50em;
+    opacity: 0.0;
+}
+
+.coin:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0.5em;
+    width: 2.5em;
+    height: 4em;
+    border-radius: 50%;
+    background: #cb6d51;
+}
+
+.coin:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1.25em;
+    width: 0.5em;
+    height: 4em;
+    background: #e79178;
+}
+
+.coin.active {
+    opacity: 1.0;
+    transition: all 1.5s ease;
+    margin-top: 1em !important;
+    margin-left: 4em !important;
+}

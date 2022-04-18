@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona!</title>
+    <link rel="stylesheet" href="./css/coin.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <div class="positBox">
+        <div class="arcadeBox">
+            <div class="nomeJogo">
+                <h1>De<span class="apaga">ton</span>a<span class="apaga">!</span></h1>
+            </div>
+            <div>
+                <img src="imagens/insert-coin.gif" alt="insira uma moeda">
+            </div>
+            <div>
+                <img src="./imagens/controle.jpg" alt="">
+            </div>
+            <div class="creditos">
+                <div id="coin" class="wrapper" onclick="audio.play()">
+                    <a href="javascript:setTimeout(()=>{window.location.href = './fases/index.html' },300);">
+                        <div class="gizmo">
+                            <div class="led one on"></div>
+                            <div class="slot"></div>
+                            <div class="coin"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="placa">
+                    <p class="pCred">Desenvolvido por<br>Igor Santos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/coin.js"></script>
+</body>
+
+</html>
