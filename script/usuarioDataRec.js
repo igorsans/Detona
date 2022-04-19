@@ -1,5 +1,11 @@
 // export default usuarioName;
-// var usuarioName = prompt('Digite aqui o seu nome!');
+function pegarNomeUsuario(){
+var usuarioName = prompt('Digite aqui o seu nome!');
+localStorage.setItem('usuarioName',usuarioName);
+var localSName = localStorage.getItem('usuarioName');
+}
+pegarNomeUsuario();
+
 
 var sabor = 'teste';
 console.log(sabor);

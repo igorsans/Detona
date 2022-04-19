@@ -47,7 +47,6 @@ body {
 .nomeJogo{
     text-align: center;
     font-size: 1.4em;
-    font-family: monospace;
     background-color: rgb(7, 7, 7);
     margin: 2%;
     width: 90%;
@@ -57,6 +56,7 @@ body {
     color: #0026ff;
     box-shadow: inset 0 0 20px 0 #0026ff, 0 0 20px 0 #0026ff;
     text-shadow: 0 0 8px hsla(231, 100%, 50%, 0.687), hsla(231, 100%, 50%, 0.984);
+    padding: 8px;
 }
 .apaga{
     animation-duration: 8s;
