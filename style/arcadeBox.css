@@ -78,6 +78,13 @@ body{
     background-color: black;
     margin: auto;
 }
+.btn{
+    padding: 10px;
+    border: #0026ffdb 4px solid;
+    border-radius: 16px;
+    color: #ffffff;
+    box-shadow: inset 0 0 20px 0 #0026ff, 0 0 20px 0 #0026ff;
+}
 .controL{
     width: 50%;
     height: 120px;
