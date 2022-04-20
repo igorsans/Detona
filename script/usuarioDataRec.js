@@ -25,6 +25,6 @@ function verificarIdade(idadeUser) {
     localStorage.setItem('idadeUser', redondo);
     setTimeout(() => {
         window.location.href = "./personagens/choseChar.html";
-    }, 450);
+    }, 550);
 
 }
