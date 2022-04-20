@@ -63,7 +63,7 @@ body{
     justify-content: space-around;
     align-items: center;
     line-height: 30px;
-    background-image: url(../imagens/bgwalpp.jpg);
+    /* background-image: url(../imagens/bgwalpp.jpg); */
 }
 .texto{
     margin: 0 35px;
