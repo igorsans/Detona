@@ -8,27 +8,28 @@
     font-weight: normal;
 }
 @keyframes teste{
-    0,100%{color: #0ff}
+    --0,100%{color: #0ff}
     12%{color: #0026ff; text-shadow: 0px 0px #0026ff}
     20%{color: #2b204e; text-shadow: none;}
     22%{color: #0026ff; text-shadow: 0px 0px #0026ff}
     35%{color: #2b204e; text-shadow: none;}
 }
 body{
-    background-color: bisque;
+    background-color: black;
 }
 .positBox{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-content: center;
+    width: 93%;
+    margin: auto;
 }
 .arcadeBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 170vh;
     margin-top: 10px;
     border: 8px solid #000d58;
     border-radius: 16px 16px 0px 0px;
@@ -56,14 +57,28 @@ body{
     text-align: center;
     border: 1px solid blue;
     width: 90%;
-    height: 73vh;
+    height: 68.6vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     line-height: 30px;
-
+    background-image: url(../imagens/bgwalpp.jpg);
 }
 .texto{
     margin: 0 35px;
+    font-size: 0.85em;
+}
+.controlImg{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    margin: auto;
+}
+.controL{
+    width: 50%;
+    height: 120px;
 }

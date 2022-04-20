@@ -20,8 +20,7 @@ function verificarIdade(idadeUser) {
         resultadoneg = Math.sign(redondo)
         if (resultadoneg < 1){
             idadeRes = true;
-        }
-            
+        }            
     }
     localStorage.setItem('idadeUser', redondo);
     setTimeout(() => {
