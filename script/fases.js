@@ -6,8 +6,9 @@ var msgResCerta;
 var msgResErrada;
 var msgResErrada1;
 var resUser;
-var vidas = 4
+var vidas = 2
 var proximapagina;
+
 function validarResposta(msgPergunta, resCerta, resErrada, resErrada1, msgResCerta, msgResErrada, msgResErrada1,proximapagina) {
     
     while (!false) {
