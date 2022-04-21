@@ -7,6 +7,7 @@ function fase1(nexPag) {
     while (!false) {
         if (vidasUser < 1) {
             alert('Game Over\nTente novamente');
+            window.location.href = "../choseChar.html"
             break;
         }
         var resUsuario = prompt(`O que você fará?\nA - Lutar contra os guardas.\nB - Correr!\nC - Dizer que há algo atras de\ntodos eles e aproveitar para correr enquanto eles não estão olhando!`);
@@ -21,10 +22,10 @@ function fase1(nexPag) {
         } else if (resUsuario.toLowerCase() == 'a') {
             vidasUser--
             alert(`O que você pensou? eles são muito mais fortes e estão em maior numero.\nVidas: ${vidasUser}`)
-        } else if (resUsuario.toLocaleLowerCase() == 'c' && idade <= 20){
+        } else if (resUsuario.toLocaleLowerCase() == 'c' && idade <= 20) {
             vidasUser--
             alert(`Eles não vão cair nessa!\nVidas: ${vidasUser}`)
-        } else if (resUsuario.toLocaleLowerCase() == 'b' && idade > 20){
+        } else if (resUsuario.toLocaleLowerCase() == 'b' && idade > 20) {
             vidasUser--
             alert(`Que que há velinho?\nJá não está na flor da idade para ficar correndo por ae né?\nVocê tenta correr e eles te alcançam andando.\nVidas: ${vidasUser}`)
         } else {
