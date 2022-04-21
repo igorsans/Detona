@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'bits';
+    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'bits', monospace;
+    margin: 10px;
+}
+.creditosBox {
+    color: white;
+    display: flex;
+    font-family: 'bits',monospace;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-top: 30px;
+    height: 520px;
+    overflow: hidden;
+}
+.transparent{
+    color: transparent;
+}
+.creditos{
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+.creditos1{
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px;
+}
+
+#line {
+    border-right: 2px solid rgba(255, 255, 255, 0.503);
+    color: white;
+    font-family: 'bits', monospace;
+    font-size: 1em;
+    margin: 0 100vh;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.creditos,.creditos1{
+    animation: anim 20s normal both;
+}
+.typing-animation {
+    animation: blinkCursor 300ms infinite normal, typing 2s steps(80) 1s normal both;
+}
+@keyframes anim {
+    from {
+        margin-top: 490px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 53em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.503)
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}

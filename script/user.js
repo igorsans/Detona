@@ -7,7 +7,7 @@ function fase1(nexPag) {
     while (!false) {
         console.log(idade);
         if (vidasUser < 1) {
-            alert('Game Over\nInsira outra ficha e tente novamente');
+            alert('Game Over\nTente novamente');
             break;
         }
         console.log(idade);
