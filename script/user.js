@@ -1,17 +1,15 @@
 var idade = localStorage.getItem('idadeUser');
-var vidasUser = 4
+var vidasUser = 2
 var nexPag;
 var carro;
 
 function fase1(nexPag) {
     while (!false) {
-        console.log(idade);
         if (vidasUser < 1) {
             alert('Game Over\nTente novamente');
             break;
         }
-        console.log(idade);
-        var resUsuario = prompt(`O que você fará?\nA - Lutar contra os guardas.\nB - Fugir correndo!\nC - Dizer que há algo atras de\ntodos eles e aproveitar para correr enquanto eles não estão olhando!`);
+        var resUsuario = prompt(`O que você fará?\nA - Lutar contra os guardas.\nB - Correr!\nC - Dizer que há algo atras de\ntodos eles e aproveitar para correr enquanto eles não estão olhando!`);
         if (resUsuario.toLowerCase() == 'b' && idade <= 20) {
             alert(`Está com todo gás né?\nMostrou que está preparado!\nSe a corrida for a pé ja temos um ganhador!`)
             window.location.href = nexPag;
@@ -81,6 +79,11 @@ var finishMsg;
 
 function correr(nexPag, nivel) {
     while (!false) {
+        if (vidasUser < 1) {
+            alert('Game Over\nTente novamente');
+            window.location.href = "../choseChar.html"
+            break;
+        }
         if (nivel == 1) {
             finishMsg = finishMsg1
             var msgTela = 'Qual pista?\nA - Choquito\nB - Sorvete\nC - Confeitero';
@@ -110,7 +113,9 @@ function correr(nexPag, nivel) {
                 window.location.href = nexPag
                 break
             } else {
-                alert('Seu carro não foi feito para está pista.')
+                vidasUser--
+                alert(`Seu carro não foi feito para está pista. \nVidas: ${vidasUser}`)
+
             }
         } else {
             alert('não entendi')
