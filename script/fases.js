@@ -14,6 +14,7 @@ function validarResposta(msgPergunta, resCerta, resErrada, resErrada1, msgResCer
     while (!false) {
         if (vidas < 1){
             alert('Game Over\nInsira outra ficha e tente novamente');
+            window.location.href = "../choseChar.html"
             break;
         }
         var resUser = prompt(msgPergunta);

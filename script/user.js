@@ -11,21 +11,24 @@ function fase1(nexPag) {
             break;
         }
         console.log(idade);
-        var resUsuario = prompt('O que você fará?');
+        var resUsuario = prompt(`O que você fará?\nA - Lutar contra os guardas.\nB - Fugir correndo!\nC - Dizer que há algo atras de\ntodos eles e aproveitar para correr enquanto eles não estão olhando!`);
         if (resUsuario.toLowerCase() == 'b' && idade <= 20) {
-            alert('foi jovem')
+            alert(`Está com todo gás né?\nMostrou que está preparado!\nSe a corrida for a pé ja temos um ganhador!`)
             window.location.href = nexPag;
             return true
         } else if (resUsuario.toLowerCase() == 'c' && idade > 20) {
-            alert('foi senhor')
+            alert(`Show de atuação, enquanto eles olhavam e tentavam encontrar algo você sai de fininho!`)
             window.location.href = nexPag;
             return true
         } else if (resUsuario.toLowerCase() == 'a') {
             vidasUser--
-            alert(`não foi\nVidas: ${vidasUser}`)
-        } else if ((resUsuario.toLocaleLowerCase() == 'c' && idade <= 20) || resUsuario.toLocaleLowerCase() == 'b' && idade > 20) {
+            alert(`O que você pensou? eles são muito mais fortes e estão em maior numero.\nVidas: ${vidasUser}`)
+        } else if (resUsuario.toLocaleLowerCase() == 'c' && idade <= 20){
             vidasUser--
-            alert(`não foi\nVidas: ${vidasUser}`)
+            alert(`Eles não vão cair nessa!\nVidas: ${vidasUser}`)
+        } else if (resUsuario.toLocaleLowerCase() == 'b' && idade > 20){
+            vidasUser--
+            alert(`Que que há velinho?\nJá não está na flor da idade para ficar correndo por ae né?\nVocê tenta correr e eles te alcançam andando.\nVidas: ${vidasUser}`)
         } else {
             alert(`Não entendi`)
         }
@@ -36,7 +39,7 @@ function nextPag(nexPag) {
 }
 function escolherCarro(nexPag) {
     while (!false) {
-        var carro = prompt('Escolha seu carro!')
+        var carro = prompt(`Escolha seu carro!\nA - Carro de sorvete com rodas de donut's\nB - Conversivel com roda de mentos e motor de refrigerante de cola\nC - Gipe com rodas de rapadura.`)
         var carroSelect = carro.toLocaleLowerCase()
         if (carroSelect == 'a') {
             alert('Esse carro parece delicioso, quer dizer, veloz.\nEsse carro é otimo para pistas mais geladas, as rodas de donuts não deixam ele deslizar, só cuidado pra não aquecer o motor dele!');
@@ -74,10 +77,12 @@ var carroSelect = localStorage.getItem('carroUser')
 var finishMsg1 = localStorage.getItem('carroMsg1')
 var finishMsg2 = localStorage.getItem('carroMsg2')
 var nivel;
+var finishMsg;
 
 function correr(nexPag, nivel) {
     while (!false) {
         if (nivel == 1) {
+            finishMsg = finishMsg1
             var msgTela = 'Qual pista?\nA - Choquito\nB - Sorvete\nC - Confeitero';
             if (carroSelect == 'a') {
                 carroSelectNew = 'b';
@@ -87,6 +92,7 @@ function correr(nexPag, nivel) {
                 carroSelectNew = 'a';
             }
         } else if (nivel == 2) {
+            finishMsg = finishMsg2
             var msgTela = 'Qual pista?\nA - Açucar\nB - Mouse salada\nC - Quebra-Queixo'
             if (carroSelect == 'a') {
                 carroSelectNew = 'b';
@@ -100,7 +106,7 @@ function correr(nexPag, nivel) {
         var pistaSelect = pista.toLocaleLowerCase();
         if (pistaSelect == 'a' || pistaSelect == 'b' || pistaSelect == 'c') {
             if (carroSelectNew == pistaSelect) {
-                alert(finishMsg1)
+                alert(finishMsg)
                 window.location.href = nexPag
                 break
             } else {
