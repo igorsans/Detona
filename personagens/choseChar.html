@@ -6,44 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selecione o seu personagem!</title>
-    <link rel="stylesheet" href="../style/choseChar.css">
+    <!-- <link rel="stylesheet" href="../style/choseChar.css"> -->
+    <link rel="stylesheet" href="../style/chooseChar.css">
     <link rel="shortcut icon" href="../imagens/favicon/indexfavicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="caixa">
-        <div class="arcadeBox">
-            <div class="nomeJogo">
-                <h1>De<span class="apaga">ton</span>a<span class="apaga">!</span></h1>
+    <div>
+        <div class="nomeJogo">
+            <h1>De<span class="apaga">ton</span>a<span class="apaga">!</span></h1>
+        </div>
+        <div class="tela">
+            <div class="usuario">
+                <h2><spam id="userName">Usuario</spam> selecione o seu personagem!</h2>
             </div>
-            <div class="personagens">
-                <h2>
-                    <spam id="userName">Usuario</spam> selecione o seu personagem!
-                </h2>
-                <div class="personagem">
-                    <div class="persona1" onclick="selecionePersonagem('../personagens/ralph/14098.html')">
-                        <img src="../imagens/ralphgif.webp" width="200px" height="200px" alt="">
-                        <h3>Este é Ralph e ele está muito triste por não ter uma medalha de heroi e não ser convidado
-                            para o aniversario de 30 anos do seu jogo, porem com todas as suas forças ele tentará provar
-                            que é possivel um vilão se tornar um Heroi!</h3>
-                    </div>
-                    <div class="persona2" onclick="selecionePersonagem('../personagens/felix/14577.html')">
-                        <img src="../imagens/felix-gif.gif" alt="">
-                        <h3>Este é Felix Jr e sem seu amigo Ralph o seu jogo está com os dias contados, para consertar
-                            isso Felix parte em busca de encontrar seu amigo.</h3>
-                    </div>
-                    <div class="persona3" onclick="selecionePersonagem('../personagens/user/18714.html')">
-                        <img src="../imagens/usuario.gif" alt="">
-                        <h3>Olá, <spam id="userName1">Usuario</spam> você tambem pode fazer parte dessa historia e ser
-                            um heroi detonando tudo que encontrar pelo caminho! Vamos embarcar nessa jornada?</h3>
-                    </div>
+            <div class="personagem">
+                <div class="persona1" onclick="selecionePersonagem('../personagens/ralph/14098.html')">
+                    <img class="imggif" src="../imagens/ralphgif.webp" alt="">
+                    <h3>Este é Ralph e ele está muito triste por não ter uma medalha de heroi e não ser convidado
+                        para o aniversario de 30 anos do seu jogo, porem com todas as suas forças ele tentará provar
+                        que é possivel um vilão se tornar um Heroi!</h3>
                 </div>
-            </div>
-            <div class="controle-wide">
-                <img src="../imagens/controle-wide.jpg" alt="">
+                <div class="persona2" onclick="selecionePersonagem('../personagens/felix/14577.html')">
+                    <img class="imggif1" src="../imagens/felix-gif.gif" alt="">
+                    <h3>Este é Felix Jr e sem seu amigo Ralph o seu jogo está com os dias contados, para consertar
+                        isso Felix parte em busca de encontrar seu amigo.</h3>
+                </div>
+                <div class="persona3" onclick="selecionePersonagem('../personagens/user/18714.html')">
+                    <img class="imggif" src="../imagens/usuario.gif" alt="">
+                    <h3>Olá, <spam id="userName1">Usuario</spam> você tambem pode fazer parte dessa historia e ser
+                        um heroi detonando tudo que encontrar pelo caminho! Vamos embarcar nessa jornada?</h3>
+                </div>
             </div>
         </div>
     </div>
+
+    <footer class="controle-wide"><img src="../imagens/controle-wide.jpg" alt=""></footer>
     <script src="../script/usuarioData.js"></script>
     <script src="../script/selecionePersonagem.js"></script>
 </body>
