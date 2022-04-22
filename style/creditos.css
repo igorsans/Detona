@@ -29,7 +29,7 @@ h1 {
     font-size: 1.2em;
     line-height: 40px;
     margin-top: 30px;
-    height: 520px;
+    height: 620px;
     overflow: hidden;
 }
 .transparent{
@@ -91,4 +91,11 @@ h1 {
     to {
         border-right-color: transparent;
     }
+}
+.btn{
+
+    cursor: pointer;
+}
+a{
+    color: white;
 }
