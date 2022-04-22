@@ -43,7 +43,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'bits', monospace;
-    /* color: white; */
+    color: white;
 }
 
 .nomeJogo {
