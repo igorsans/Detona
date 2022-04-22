@@ -43,6 +43,7 @@
     border-radius: 1em;
     margin-bottom: 0.2em;
 }
+
 .gizmo:hover .coin {
     opacity: 1.0;
     margin-left: 0;

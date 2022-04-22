@@ -9,10 +9,10 @@ var resUser;
 var vidas = 2
 var proximapagina;
 
-function validarResposta(msgPergunta, resCerta, resErrada, resErrada1, msgResCerta, msgResErrada, msgResErrada1,proximapagina) {
-    
+function validarResposta(msgPergunta, resCerta, resErrada, resErrada1, msgResCerta, msgResErrada, msgResErrada1, proximapagina) {
+
     while (!false) {
-        if (vidas < 1){
+        if (vidas < 1) {
             alert('Game Over\nTente novamente');
             window.location.href = "../choseChar.html"
             break;
@@ -25,14 +25,14 @@ function validarResposta(msgPergunta, resCerta, resErrada, resErrada1, msgResCer
         } else if (resUser.toLowerCase() == resErrada) {
             vidas--
             alert(`${msgResErrada}\nVidas Restantes = ${vidas}`)
-            
+
         } else if (resUser.toLowerCase() == resErrada1) {
             vidas--
             alert(`${msgResErrada1}\nVidas Restantes = ${vidas}`)
-            
+
         } else {
             alert('Não capitei a sua mensagem');
         }
-    } 
+    }
 
 }

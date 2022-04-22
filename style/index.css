@@ -2,22 +2,45 @@
     margin: 0px;
     padding: 0px;
 }
+
 @font-face {
     font-family: 'bits';
     src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
     font-weight: normal;
 }
 
-@keyframes teste{
-    --0,100%{color: #0ff}
-    12%{color: #0026ff; text-shadow: 0px 0px #0026ff}
-    20%{color: #2b204e; text-shadow: none;}
-    22%{color: #0026ff; text-shadow: 0px 0px #0026ff}
-    35%{color: #2b204e; text-shadow: none;}
+@keyframes teste {
+
+    --0,
+    100% {
+        color: #0ff
+    }
+
+    12% {
+        color: #0026ff;
+        text-shadow: 0px 0px #0026ff
+    }
+
+    20% {
+        color: #2b204e;
+        text-shadow: none;
+    }
+
+    22% {
+        color: #0026ff;
+        text-shadow: 0px 0px #0026ff
+    }
+
+    35% {
+        color: #2b204e;
+        text-shadow: none;
+    }
 }
-.nomeJogo>h1{
+
+.nomeJogo>h1 {
     font-family: 'bits', cursive;
 }
+
 body {
     background-color: #000000;
     background-image: url(../imagens/bgwalpp.jpg);
@@ -27,13 +50,15 @@ body {
     margin: auto;
     color: #2b204e;
 }
-.positBox{
+
+.positBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
 }
-.arcadeBox{
+
+.arcadeBox {
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -44,7 +69,8 @@ body {
     border: 8px solid #000d58;
     border-radius: 16px 16px 0px 0px;
 }
-.nomeJogo{
+
+.nomeJogo {
     text-align: center;
     font-size: 1.4em;
     background-color: rgb(7, 7, 7);
@@ -58,12 +84,14 @@ body {
     text-shadow: 0 0 8px hsla(231, 100%, 50%, 0.687), hsla(231, 100%, 50%, 0.984);
     padding: 8px;
 }
-.apaga{
+
+.apaga {
     animation-duration: 8s;
     animation-name: teste;
     animation-iteration-count: infinite;
 }
-.creditos{
+
+.creditos {
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -72,19 +100,21 @@ body {
     font-weight: bold;
     height: 170px;
 }
-.placa{
+
+.placa {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px 10px;
-    background-image: linear-gradient(to right,rgb(81, 81, 81),rgb(201, 201, 201),rgb(81, 81, 81));
+    background-image: linear-gradient(to right, rgb(81, 81, 81), rgb(201, 201, 201), rgb(81, 81, 81));
     opacity: 0.7;
     border-radius: 10px;
     width: 250px;
     height: 70px;
     text-align: center;
 }
-.pCred{
+
+.pCred {
     margin: 15px;
     padding: 20px;
 }

@@ -87,7 +87,7 @@ function correr(nexPag, nivel) {
         }
         if (nivel == 1) {
             finishMsg = finishMsg1
-            var msgTela = 'Qual pista?\nA - Choquito\nB - Sorvete\nC - Confeitero';
+            var msgTela = 'Qual pista devemos escolher?\nA - Pista de choquito com paçoca.\nB - Pista de sorvete de creme.\nC - Bolo de chocolate!';
             if (carroSelect == 'a') {
                 carroSelectNew = 'b';
             } else if (carroSelect == 'b') {
@@ -97,7 +97,7 @@ function correr(nexPag, nivel) {
             }
         } else if (nivel == 2) {
             finishMsg = finishMsg2
-            var msgTela = 'Qual pista?\nA - Açucar\nB - Mouse salada\nC - Quebra-Queixo'
+            var msgTela = 'Qual pista vamos correr?\nA - Pista do pão doce.\nB - Pista de mouse de morango.\nC - Pista do Quebra-Queixo.'
             if (carroSelect == 'a') {
                 carroSelectNew = 'b';
             } else if (carroSelect == 'b') {

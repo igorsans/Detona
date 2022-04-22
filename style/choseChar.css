@@ -2,18 +2,41 @@
     margin: 0px;
     padding: 0px;
 }
+
 @font-face {
     font-family: 'bits';
     src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
     font-weight: normal;
 }
-@keyframes teste{
-    --0,100%{color: #0ff}
-    12%{color: #0026ff; text-shadow: 0px 0px #0026ff}
-    20%{color: #2b204e; text-shadow: none;}
-    22%{color: #0026ff; text-shadow: 0px 0px #0026ff}
-    35%{color: #2b204e; text-shadow: none;}
+
+@keyframes teste {
+
+    --0,
+    100% {
+        color: #0ff
+    }
+
+    12% {
+        color: #0026ff;
+        text-shadow: 0px 0px #0026ff
+    }
+
+    20% {
+        color: #2b204e;
+        text-shadow: none;
+    }
+
+    22% {
+        color: #0026ff;
+        text-shadow: 0px 0px #0026ff
+    }
+
+    35% {
+        color: #2b204e;
+        text-shadow: none;
+    }
 }
+
 body {
     background-color: #000000;
     background-image: url(../imagens/bgwalpp.jpg);
@@ -21,10 +44,12 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
 a {
     color: white;
     text-decoration: none;
 }
+
 .caixa {
     width: 100%;
     height: 808px;
@@ -48,7 +73,7 @@ a {
 }
 
 .nomeJogo {
-    font-family: 'bits' ;
+    font-family: 'bits';
     text-align: center;
     font-size: 1.4em;
     background-color: rgb(7, 7, 7);
@@ -62,11 +87,13 @@ a {
     padding: 8px;
 
 }
-.apaga{
+
+.apaga {
     animation-duration: 8s;
     animation-name: teste;
     animation-iteration-count: infinite;
 }
+
 .personagens {
     text-align: center;
     display: flex;
@@ -79,16 +106,19 @@ a {
     margin: 0 auto;
     font-family: 'bits';
 }
-.personagem{
+
+.personagem {
     width: 90%;
     height: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* align-items: center; */
     background-color: rgb(0, 0, 0);
 }
-.persona1,.persona2,.persona3{
+
+.persona1,
+.persona2,
+.persona3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -102,31 +132,53 @@ a {
     cursor: pointer;
 }
 
-.persona1 >h3,.persona2 >h3,.persona3 >h3{
+.persona1>h3,
+.persona2>h3,
+.persona3>h3 {
     margin-top: 25px;
     width: 500px;
     font-family: 'bits';
     line-height: 25px;
 }
-.persona1>img{
+
+.persona1>img {
     width: 150px;
     height: 150px;
 }
-.persona3>img{
+
+.persona3>img {
     width: 150px;
     height: 150px;
 }
-.persona1 >img:hover,.persona2 >img:hover,.persona3 >img:hover{
+
+.persona1>img:hover,
+.persona2>img:hover,
+.persona3>img:hover {
     transform: scale(1.2);
     transition: 5;
 }
-.persona1:hover,.persona2:hover,.persona3:hover{
+
+.persona1:hover,
+.persona2:hover,
+.persona3:hover {
     font-size: 0.9em;
 }
-.controle-wide{
+
+.controle-wide {
     width: 100%;
-    
+
 }
-.controle-wide >img{
+
+.controle-wide>img {
     width: 100%;
+}
+
+@media (max-width:1024px) {
+
+    .persona3:hover,
+    .persona2:hover,
+    .persona1:hover {
+        font-size: 0.6em;
+        width: 10px;
+    }
 }

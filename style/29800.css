@@ -1,5 +1,6 @@
-.tela{
+.tela {
     background-image: url(../imagens/felix2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
