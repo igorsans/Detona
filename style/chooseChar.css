@@ -36,7 +36,8 @@
         text-shadow: none;
     }
 }
-body{
+
+body {
     background-image: url(../imagens/bgwalpp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,6 +45,7 @@ body{
     font-family: 'bits', monospace;
     /* color: white; */
 }
+
 .nomeJogo {
     font-family: 'bits';
     text-align: center;
@@ -59,11 +61,13 @@ body{
     padding: 8px;
 
 }
+
 .apaga {
     animation-duration: 8s;
     animation-name: teste;
     animation-iteration-count: infinite;
 }
+
 .tela {
     text-align: center;
     display: flex;
@@ -78,25 +82,35 @@ body{
     font-family: 'bits';
     background-color: black;
 }
-.usuario>h2{
+
+.usuario>h2 {
     padding: 15px 0px;
 }
-.personagem{
+
+.personagem {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.imggif{
+
+.imggif {
     width: 150px;
     height: 150px;
 }
-.controle-wide>img{
+
+.controle-wide>img {
     width: 100%;
 }
-.persona1,.persona2,.persona3{
+
+.persona1,
+.persona2,
+.persona3 {
     font-size: 0em;
     color: white;
 }
-.persona1:hover,.persona2:hover,.persona3:hover{
+
+.persona1:hover,
+.persona2:hover,
+.persona3:hover {
     font-size: 1em;
 }
